@@ -2,7 +2,7 @@
 This is test example with k8s
 
 # Kubernetes
-### Kubernetes Rolling Updates
+### Kubernetes strategy "Recreate" or "RollingUpdates" Deployment
 ```
 # kubectl run nginx-deploy --image=nginx:1.16 replicas=1
 # kubectl rolling-update nginx-deploy --image=nginx:1.17
