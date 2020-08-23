@@ -1,0 +1,19 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod-busybox-pvc
+spec:
+  volumes:
+    - name: pod-volume-data
+      persistentVolumeClaim:
+        claimName: pvc-claim
+  containers:
+  - name: busybox
+    image: busybox
+    args:
+    - sleep
+    - "1000000"
+    imagePullPolicy: Always
+    volumeMounts:
+      - name: pod-volume-data
+        mountPath: "/mydata"
