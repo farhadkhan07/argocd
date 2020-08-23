@@ -37,12 +37,12 @@ Access Mode:
 2. RWM
 3. RO
 
-kubectl get pv,pvc,pod
-kubectl describe pv pv-volume
-kubectl describe pvc pvc-claim
-kubectl exec pod-busybox-pvc ls
-kubectl exec pod-busybox-pvc ls mydata
-kubectl exec pod-busybox-pvc touch /mydata/hello
-kubectl exec pod-busybox-pvc touch /mydata/hello2
-kubectl exec pod-busybox-pvc ls /mydata
+# kubectl get pv,pvc,pod
+# kubectl describe pv pv-volume
+# kubectl describe pvc pvc-claim
+# kubectl exec pod-busybox-pvc ls
+# kubectl exec pod-busybox-pvc ls mydata
+# kubectl exec pod-busybox-pvc touch /mydata/hello
+# kubectl exec pod-busybox-pvc touch /mydata/hello2
+# kubectl exec pod-busybox-pvc ls /mydata
 ```
